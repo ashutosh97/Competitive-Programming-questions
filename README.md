@@ -9,6 +9,7 @@ This repo is open for all. Add your favourite competitive programming questions 
 ## Getting Started
 
 - Fork this repo (button on top)
+- Star this repo (button on top)
 - Clone on your local machine
 
 ```terminal
