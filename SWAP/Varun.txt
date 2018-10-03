@@ -1,0 +1,11 @@
+Question - Swap two numbers in c++ without using extra space.
+Solution - 
+#include<iostream.h>
+void main()
+{ int a,b;
+  cin>>a>>b;
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  cout<<a<<b;
+}
