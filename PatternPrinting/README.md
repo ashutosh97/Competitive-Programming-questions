@@ -1,6 +1,6 @@
-#Pattern Printing
+# Pattern Printing
 
-#Pattern 1: sum.java
+## Pattern 1: sum.java
 
     28
    13 15
