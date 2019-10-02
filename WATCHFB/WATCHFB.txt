@@ -1,8 +1,13 @@
+The solution given is created by the author and using it without prior written permission from the author can lead to legal actions.
+Please contact amcs1729@gmail.com for any queries
+
+
+
 https://www.codechef.com/problems/WATCHFB
 
 Chef and his son Chefu want to watch a match of their favourite football team playing against another team, which will take place today.
 
-Unfortunately, Chef is busy in the kitchen preparing lunch, so he cannot watch the match. Therefore, every now and then, Chef asks Chefu about the current scores of the teams and Chefu tells him the score. However, Chefu sometimes does not specify the teams along with the score — for example, he could say "the score is 3 to 6", and there is no way to know just from this statement if it was their favourite team or the other team that scored 6 goals; in different statements, the order of teams may also be different. Other times, Chefu specifies which team scored how many goals.
+Unfortunately, Chef is busy in the kitchen preparing lunch, so he cannot watch the match. Therefore, every now and then, Chef asks Chefu about the current scores of the teams and Chefu tells him the score. However, Chefu sometimes does not specify the teams along with the score â€” for example, he could say "the score is 3 to 6", and there is no way to know just from this statement if it was their favourite team or the other team that scored 6 goals; in different statements, the order of teams may also be different. Other times, Chefu specifies which team scored how many goals.
 
 Chef asks for the score and receives a reply N times. There are two types of replies:
 
