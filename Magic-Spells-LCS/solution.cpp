@@ -62,45 +62,46 @@ string SpellJournal::journal = "";
 
 void counterspell(Spell *spell) {
 
-  /* Enter your code here */
-  if (auto f = dynamic_cast<Fireball*>(spell)) {
-      f->revealFirepower();
-  }
-  else if (auto f = dynamic_cast<Frostbite*>(spell)) {
-      f->revealFrostpower();
-  }
-  else if (auto f = dynamic_cast<Thunderstorm*>(spell)) {
-      f->revealThunderpower();
-  }
-  else if (auto f = dynamic_cast<Waterbolt*>(spell)) {
-      f->revealWaterpower();
-  }
-  else {
-    auto find = [](const string& A, const string& B) -> int
-    {
-        std::vector<std::vector<int>> LCS(A.length() + 1);        
-        for (int i = 0; i < LCS.size(); i++)
-            LCS[i].resize(B.length() + 1);
+    /* Enter your code here */
+    if (auto f = dynamic_cast<Fireball*>(spell)) {
+        f->revealFirepower();
+    }
+    else if (auto f = dynamic_cast<Frostbite*>(spell)) {
+        f->revealFrostpower();
+    }
+    else if (auto f = dynamic_cast<Thunderstorm*>(spell)) {
+        f->revealThunderpower();
+    }
+    else if (auto f = dynamic_cast<Waterbolt*>(spell)) {
+        f->revealWaterpower();
+    }
+    else {
+        auto find = [](const string& A, const string& B) -> int
+        {
+            std::vector<std::vector<int>> LCS(A.length() + 1);        
+            for (int i = 0; i < LCS.size(); i++)
+                LCS[i].resize(B.length() + 1);
             
-       for (int i = 1; i <= A.length(); i++) {
-         for (int j = 1; j <= B.length(); j++) {
-            if (A[i - 1] == B[j - 1]) {
-                LCS[i][j] = LCS[i - 1][j - 1] + 1;
-            } else {
-                LCS[i][j] = max(LCS[i - 1][j], LCS[i][j - 1]);
+            for (int i = 1; i <= A.length(); i++) {
+                for (int j = 1; j <= B.length(); j++) {
+                    if (A[i - 1] == B[j - 1]) {
+                        LCS[i][j] = LCS[i - 1][j - 1] + 1;
+                    }
+                    else {
+                        LCS[i][j] = max(LCS[i - 1][j], LCS[i][j - 1]);
+                    }
+                }
             }
-        }
-       }
-       return LCS[A.length()][B.length()];
-    };
+            return LCS[A.length()][B.length()];
+        };
 
-    string s1 = spell->revealScrollName();
-    string s2 = SpellJournal::read();
-    int len = 0;
-    if (s1.length() > 0 && s2.length() > 0)
-        len = find(&s1[0], &s2[0]);
-    cout << len << endl;
-  }
+        string s1 = spell->revealScrollName();
+        string s2 = SpellJournal::read();
+        int len = 0;
+        if (s1.length() > 0 && s2.length() > 0)
+            len = find(&s1[0], &s2[0]);
+        cout << len << endl;
+    }
 }
 
 class Wizard {
