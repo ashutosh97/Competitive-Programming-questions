@@ -1,0 +1,32 @@
+Chef has no work to do in the kitchen, so he decided to play a card game with the following rules:
+
+Initially, N cards are placed in a row on a table. Each card is placed either face up or face down.
+The goal of the game is to remove all cards from the table, one by one.
+A card may be removed only if it is currently facing up.
+When a card is removed, its adjacent cards (the cards directly to its left and right, if they exist) are flipped, i.e. a card that was facing up will be facing down and vice versa.
+There is an empty space left behind each removed card, i.e. the remaining cards are not moved to create a contiguous row of cards again. Therefore, if the game starts with three cards and the middle card is removed, then the cards on the sides are flipped, but removing one of these cards afterwards does not cause the other card to be flipped, since it is only adjacent to the empty space created by removing the middle card.
+Determine whether Chef is able to win this game.
+
+Input
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single string S describing the row of cards initially placed on the table. Each character of this string is either '1', denoting a face up card, or '0', denoting a face down card.
+Output
+For each test case, print a single line containing the string "WIN" if Chef can win the game or "LOSE" if he cannot win (without quotes).
+
+Constraints
+1=T=102
+1=|S|=105
+Subtasks
+Subtask #1 (30 points):
+
+1=T=10
+1=|S|=100
+Subtask #2 (70 points): original constraints
+
+Example Input
+1
+10
+Example Output
+WIN
+Explanation
+Example case 1: First, Chef should remove the first card, which makes the second card face up. Then, he should remove the second card. This way, all cards are removed and Chef wins.
