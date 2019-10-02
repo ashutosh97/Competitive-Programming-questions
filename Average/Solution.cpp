@@ -32,3 +32,25 @@ int main()
         cout<<count<<endl;
         return 0;
 }
+
+
+avgBasic Solution:
+//Let's take the average of any 5 numbers
+#include <iostream>
+
+using namespace std;
+int main()
+{int x;
+float total=0;
+int num=0;
+
+
+while (num<5){
+ cin>>x;
+ total=total+x;
+ num=num+1;
+}
+float avgBasic= total/num;
+cout<<avgBasic;
+return 0;
+}
