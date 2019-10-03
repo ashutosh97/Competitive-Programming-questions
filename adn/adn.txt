@@ -1,0 +1,28 @@
+The Curiosity robot is on Mars and is exploring its environment. It gathers evidence
+soil and analyzes them in the hope of finding organic DNA sequences. From time to time
+when it happens that the robot discovers such a sequence, it cannot give
+the news continues until it is not certain that it is truly alien.
+That is why he should check if not sequentially, the research can be formed from
+sequence, they DNA with which it was contaminated on earth.
+Because after the launch, the people discovered the contamination, they transmitted it to you
+to the robot informed of all the DNA sequences in question.
+You are required to create a program that checks for a given DNA sequence
+if this can be formed by sequentially interlocking, the DNA taken from it
+earth.
+Obs.1: The spacing process is successful if all have been used
+the characters in the input DNA (all sequences will be used, they are given).
+Obs.2: The relative order of the characters in a component DNA is the same
+in the resulting DNA.
+
+Input data
+The data will be read from the file, the file adn.in.
+On the first line you will find the T number of tests in the file.
+On the following T lines there is a test.
+A test consists of an entire N, N, and character strings representing those
+In sequence, it is the DNA and at the end the target string representing the DNA that is
+wants tested.
+
+The output will be written in the file, the adn.out file.
+It will count, it holds T lines.
+On each line, 0 will be written if the DNA tested cannot be formed from the other Ns
+(so it is extraterrestrial DNA) or 1 otherwise.
