@@ -1,0 +1,53 @@
+Gigel is in a strange country, where each stadium is much longer
+than width, imea, so that we can consider width, imea 1.
+He read on the internet that the maximum length of a stadium in this country is longer
+less than or equal to 2 ∗ 10 9.
+At each stadium there are a number of sprinklers used to water the lawn
+before the matches.
+The spray number i is placed at the coordinate xi and has the power pi. A
+sprinklers can water a fixed segment of grass: more precisely if watering to the left will
+cover the segment [x i - p i, x i], and if wet to the right it will cover the segment
+[x i, x i + p i].
+Gigel knows that the sprinklers are hidden in the lawn, buried in the ground. to
+When placing an order, a sprinkler can come out on top and wet it either
+left or right (depending on the order received).
+If two sprinklers water at the same point, then one of them is considered
+redundant and will be locked upright. We consider that in this position, ie
+blocking, splashing i can only wet the segment [x i, x i] (because the power is reduced to
+0).
+This is a compromise solution, and the company that deals with
+stadium management can do it for free. For any other operation, yes, se
+charge a fee too high to be paid by the owner (he prefers to buy a
+player than to put money in sprinklers again).
+Because the owner of the stadium
+he's probably upset because he doesn't
+can use all sprinklers simultaneously
+at full capacity (wet to the left or
+to the right), he wonders who he is
+maximum number of sprinklers used with
+maximum power.
+Gigel wishes to cheer you on
+the employer and asks for help
+determine
+the maximum number of
+sprinklers from the stadium watering
+maximum power (not locked vertically).
+For the right answer he gives you respect
+and maximum score.
+If you're a girl, give her a kiss.
+
+
+Input data
+ALL the input data will be read from the file, the splash file. It has the following
+formed:
+- on the first line of the file of the sprinkler, the name of the stadium was found.
+- on the second line are n and S, where n is the number of sprinklers in the stadium,
+and S is the length of the stadium (harbor, grass juniors).
+- on the third line are in numbers, the third number representing the coordinate x i
+for the sprayer with the number i (x i expresses the distance away from the left edge of
+lawn). This account holds separate and distinct elements.
+- on the fourth line are in numbers, the third element representing the power i
+for the sprayer i.
+
+In the file, the stropitori.out yesterday will be written on the first line ONLY the maximum number
+sprinklers from the stadium that water at maximum power.
