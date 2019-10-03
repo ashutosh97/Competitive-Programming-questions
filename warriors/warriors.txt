@@ -1,0 +1,17 @@
+The new computer game "Warriors" has captured everything, and students from Regie. Like you
+es, you a great PvP champion, you started playing it. The game runs as follows: at
+At the beginning of each match, you are given a champion with a random level in the range [1, N]
+which (for reasons not yet revealed by the developers) is not shown and K lives.
+The game proceeds as follows: At the beginning of each round, you can choose
+the level of the champion you want to do PvP with. If the level of your champion is that
+you can, equal to the level of the enemy champion, cubs, round rods, otherwise you will lose a life,
+of the K.
+You being a class algorithmicist (if you weren't giving in to Poles anymore, wouldn't you?)
+you intend to find the minimum number of matches you can play to find out
+level site.
+Input data
+On the first and only line of the file warriors.in will find two integers N
+s, and K.
+
+In the file warriors.out yesterday will write the minimum number of matches they can play
+to find out your level.
