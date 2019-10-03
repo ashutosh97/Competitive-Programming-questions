@@ -1,3 +1,0 @@
-Fizzbuzz
-
-Given 100 numbers, replace any number divisible by three with the word "fizz", any number divisible by five with the word "buzz", and any number divisible by fifteen with the word "fizzbuzz".
