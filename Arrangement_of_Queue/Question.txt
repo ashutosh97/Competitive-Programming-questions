@@ -1,4 +1,0 @@
-Find the arrangement of queue at given time:
-
-n people are standing in a queue to buy entry ticket for the carnival. People present there strongly believe in chivalry. Therefore, at time = t, if a man at position x, finds a woman standing behind him then he exchanges his position with her and therefore, at time = t+1, woman is standing at position x while man is standing behind her.
-Given the total number of people standing in a queue as n, particular instant of time as t and the initial arrangement of the queue in the form of a string containing ‘M’ representing man at position i and ‘W’ representing woman is at position i, find out the arrangement of the queue at time = t.
