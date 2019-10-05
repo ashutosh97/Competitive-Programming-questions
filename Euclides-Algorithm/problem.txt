@@ -1,0 +1,23 @@
+A ideia principal no Algoritmo de Euclides é que o MDC pode ser calculado recursivamente, usando o resto da divisão como entrada para o próximo passo, o que é baseado na seguinte propriedade do MDC:
+
+{\displaystyle MDC(a,b)=MDC(b,r)} MDC(a,b)=MDC(b,r)
+
+onde {\displaystyle r} r é o resto da divisão de {\displaystyle a} a por {\displaystyle b} b.
+
+Isso quer dizer que o resto da divisão em uma chamada do algoritmo será usado como entrada para a próxima chamada.
+
+Sabemos que esse resto é calculado da seguinte forma: {\displaystyle r=a-bq} r=a-bq, onde {\displaystyle q={\frac {a}{b}}} q={\frac  {a}{b}} é uma divisão inteira.
+
+Desta forma, podemos substituir as variáveis para obter uma sequência: usando {\displaystyle a=r_{k-1}} a=r_{{k-1}}, {\displaystyle b=r_{k}} b=r_{k} e {\displaystyle r=r_{k+1}} r=r_{{k+1}}, temos a seguinte sequência:
+
+{\displaystyle r_{k+1}=r_{k-1}-r_{k}q} r_{{k+1}}=r_{{k-1}}-r_{k}q
+
+que nos diz que para calcular o próximo resto, basta multiplicar o resto atual por {\displaystyle q={\frac {r_{k-1}}{r_{k}}}} q={\frac  {r_{{k-1}}}{r_{k}}} e depois subtrair do resto anterior.
+
+Quando o próximo resto for igual a zero, o algoritmo termina a execução e o resto atual ( {\displaystyle r_{k}} r_{k}) é o máximo divisor comum.
+
+A partir dessas observações, podemos facilmente derivar uma versão completa do algoritmo:
+
+MDC (a, b)
+
+
