@@ -1,1 +1,0 @@
-isPrime n = length (filter (==0) (map (mod n) [1..n])) == 2 
