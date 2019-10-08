@@ -1,27 +1,25 @@
-#include<iostream>
-#include <bits/stdc++.h>
-using namespace std;
-
-int maxSubarraySum(vector<int> a, int l) {
-	int max = INT_MIN, max_here = 0;
-
-	for (int i = 0; i < l; i++) {
-		max_here = max_here + a[i];
-		if (max < max_here) max = max_here;
-		if (max_here < 0) max_here = 0;
-	}
-
-	return max;
-}
-
-
+#include<bits/stdc++.h>
 int main() {
-	vector<int> arr({-2, -3, 4, -1, -2, 1, 5, -3});
-	int l = arr.size();
-
-	int m = maxSubarraySum(arr, l);
-
-	cout<<m<<" is the max subarray sum\n";
-
+	//code
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	        cin>>a[i];
+	        int sum=0,max=INT_MIN,max1=INT_MIN;
+	    for(int i=0;i<n;i++){
+	        sum+=a[i];
+	        if(sum<a[i])
+	            sum=a[i];
+	        if(sum>max)
+	            max=sum;
+	        //if(max<max1)
+	          //  sum-=a[i];
+	    }
+	    cout<<max<<"\n";
+	}
 	return 0;
 }
