@@ -1,3 +1,0 @@
-The function takes in as its parameter a list called words that contains strings. This function first calculates the length of each word, and then returns the count whereby the sequence formed by the length of the words is in increasing order.
-
-The function calculates the length of every string in the list. It has to then generate a sequence of numbers that are of increasing numberical value and return the length of the longest such sequence generated.

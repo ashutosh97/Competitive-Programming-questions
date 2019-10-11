@@ -1,9 +1,0 @@
-Implement the First-Come, First-Serve process scheduling algorithm.
-
-The input to your algorithm must be a 2-D array that contains values for(Burst Time, Arrival Time) for 10 processes. Initialize random values for each of the 2 attributes for each process and print this table.
-
-Acceptable range of values for input:
-Burst Time: [0,10]microseconds
-Arrival Time: [0,50]seconds
-*Burst Time is the amount of time the process requires to execute on the CPU.
-

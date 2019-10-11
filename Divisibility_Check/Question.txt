@@ -1,7 +1,0 @@
-You are given an array of integers. Check whether there exists a number in this array which is divisible by all other numbers in this array. Output 1, if such a number exists, and 0 otherwise.
-
-Input
-The only line of the input contains a list of space-separated integers ai (1 ≤ ai ≤ 100) — elements of the array. The size of the array is between 2 and 10, inclusive. Note that the size of the array is not given explicitly!
-
-Output
-Output 1 if there exists element of this array which is divisible by all other elements of the array, and 0 otherwise.
