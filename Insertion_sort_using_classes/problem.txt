@@ -1,7 +1,0 @@
-I have made an insertion sort algorithm in c++.
-This program uses a class as its data structure instead of array.
-Input:-
-first line will be the number of elements to be sorted
-second line will contain n space separated elements
-Output:-
-The program will use insertion sort algorithm to output n space separated numbers in sorted order.
