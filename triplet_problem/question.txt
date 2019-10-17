@@ -1,1 +1,0 @@
-Find a triplet such that sum of two equals to third element in an array.

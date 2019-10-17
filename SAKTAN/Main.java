@@ -1,7 +1,6 @@
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.InputMismatchException;
-import java.util.Arrays;
+import java.util.*;
 class LCSin
 {
     private InputStream stream;
@@ -106,90 +105,83 @@ class LCSin
 
 public class Main
 {
+   
+    
+    
+    
+    
     public static void main(String args[])
     {
         LCSin br= new LCSin(System.in);
         int test= br.readInt();
-        StringBuilder sb=new StringBuilder();
+        
         for(int testcase= 0; testcase<test;testcase++)
         {
-            long x=0;
-            long y=0;
-            long prevmax=0;
-            long prevmin=0;
-            boolean res= false;
-            
+            StringBuilder sb= new StringBuilder();
             int n= br.readInt();
-            for(int i=0;i<n;i++)
+            int m= br.readInt();
+            int q= br.readInt();
+            
+            int row[]= new int[n];
+            int col[]= new int[m];
+            
+            for(int i=0;(i<n)&&(i<m);i++)
+            {row[i]=0; col[i]=0;}
+            if(n<m)
             {
-                int alpha= br.readInt();
-                long a= br.readInt();
-                long b= br.readInt();
-                long max= (long)Math.max(a,b);
-                long min= (long)Math.min(a,b);
-                
-                if(a==b)
-                {
-                    System.out.println("YES");
-                    res= true;
-                    prevmax= a;
-                    prevmin= a;
-                    continue;
-                }
-                
-                if(alpha==1)
-                {
-                    System.out.println("YES");
-                    prevmax= max;
-                    prevmin= min;
-                    res= true;
-                    continue;
-                }
-                
-                if(min>prevmax)
-                {
-                    System.out.println("NO");
-                    prevmax= max;
-                    prevmin= min;
-                    res= false;
-                    continue;
-                }
-                
-                if((max>prevmax)&&(min<prevmax))
-                {
-                    if(res==false)
-                    {System.out.println("NO");}
-                    else
-                    {System.out.println("YES");}
-                    prevmax= max;
-                    prevmin= min;
-                    continue;
-                
-                }
-                
-                if((max==prevmax)&&(min<prevmax))
-                {
-                 if(res==false)
-                    {System.out.println("NO");}
-                    else
-                    {System.out.println("YES");}
-                    prevmax= max;
-                    prevmin= min;
-                    continue;
-                
-                }
-                
-                if((max>prevmax)&&(min==prevmax))
-                {
-                
-                System.out.println("NO");
-                res= false;
-                prevmax= max;
-                prevmin= min;
-                continue;
-                
-                }
+                for(int i=n;i<m;i++)
+                {col[i]=0;}
             }
+            else
+            {
+                for(int i=m;i<n;i++)
+                {row[i]=0;}
+            }
+            long rodd=0;
+            long codd=0;
+            //System.out.println(Arrays.toString(row));
+            //System.out.println(Arrays.toString(col));
+            int xx=0;
+            int yy=0;
+            int valx=0;
+            int valy=0;
+            for(int i=0;i<q;i++)
+            {
+                xx=br.readInt();
+                yy= br.readInt();
+                xx-=1;
+                yy-=1;
+                valx=row[xx];
+                valy=col[yy];
+                valx++;
+                valy++;
+                if(valx%2==0)
+                {rodd--;}
+                else
+                {rodd++;}
+                
+                if(valy%2==0)
+                {codd--;}
+                else
+                {codd++;}
+                
+                row[xx]=valx;
+                col[yy]=valy;
+                //System.out.println(rodd);
+                //System.out.println(codd);
+                //System.out.println(Arrays.toString(row));
+                //System.out.println(Arrays.toString(col));
+            }
+            long reven= n-rodd;
+            long ceven= m-codd;
+            
+            long odd= (codd*reven)+(ceven*rodd);
+            System.out.println(odd);
+            
         }
     }
 }
+            
+                
+                
+           
