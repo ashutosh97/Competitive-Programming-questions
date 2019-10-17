@@ -1,1 +1,0 @@
-Check if two strings are permutations of each other.

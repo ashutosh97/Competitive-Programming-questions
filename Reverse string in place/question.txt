@@ -1,2 +1,0 @@
-Write a program to reverse a String in place in Java, without using additional memory.
-You cannot use any library classes or methods like e.g. StringBuilder to solve this problem. This restriction is placed because StringBuilder and StringBuffer class define a reverse() method which can easily reverse the given String.

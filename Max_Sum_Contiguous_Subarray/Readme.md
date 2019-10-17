@@ -1,1 +1,0 @@
-A good tricky problem.
