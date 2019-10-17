@@ -1,3 +1,0 @@
-Ques:How to find a factorial of a number
-i am just giving you some hint.
-fact=fact*i

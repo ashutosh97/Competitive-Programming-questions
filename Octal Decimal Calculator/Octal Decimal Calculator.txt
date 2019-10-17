@@ -1,9 +1,0 @@
-Given an octal number it is required to convert to decimal and print it on the console
-
-Example:
-
-The octal number 567 is entered.
-
-The system calculates the equivalent number in decimal that is 375 and prints it on the console
-
-The decimal number for octal 567 is: 357
