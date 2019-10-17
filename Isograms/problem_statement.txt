@@ -1,7 +1,0 @@
-An isogram is a word that has no repeating letters, consecutive or non-consecutive. 
-How to determine whether a string is an isogram. Ignore letter case
-
-Ex.
-"Dermatoglyphics" is isogram.
-"aba" is not isogram.
-"moOse"  is not isogram.

@@ -110,86 +110,31 @@ public class Main
     {
         LCSin br= new LCSin(System.in);
         int test= br.readInt();
-        StringBuilder sb=new StringBuilder();
+        
         for(int testcase= 0; testcase<test;testcase++)
         {
-            long x=0;
-            long y=0;
-            long prevmax=0;
-            long prevmin=0;
-            boolean res= false;
-            
+           
             int n= br.readInt();
+            int a[]= new int[n];
             for(int i=0;i<n;i++)
             {
-                int alpha= br.readInt();
-                long a= br.readInt();
-                long b= br.readInt();
-                long max= (long)Math.max(a,b);
-                long min= (long)Math.min(a,b);
-                
-                if(a==b)
-                {
-                    System.out.println("YES");
-                    res= true;
-                    prevmax= a;
-                    prevmin= a;
-                    continue;
-                }
-                
-                if(alpha==1)
-                {
-                    System.out.println("YES");
-                    prevmax= max;
-                    prevmin= min;
-                    res= true;
-                    continue;
-                }
-                
-                if(min>prevmax)
-                {
-                    System.out.println("NO");
-                    prevmax= max;
-                    prevmin= min;
-                    res= false;
-                    continue;
-                }
-                
-                if((max>prevmax)&&(min<prevmax))
-                {
-                    if(res==false)
-                    {System.out.println("NO");}
-                    else
-                    {System.out.println("YES");}
-                    prevmax= max;
-                    prevmin= min;
-                    continue;
-                
-                }
-                
-                if((max==prevmax)&&(min<prevmax))
-                {
-                 if(res==false)
-                    {System.out.println("NO");}
-                    else
-                    {System.out.println("YES");}
-                    prevmax= max;
-                    prevmin= min;
-                    continue;
-                
-                }
-                
-                if((max>prevmax)&&(min==prevmax))
-                {
-                
-                System.out.println("NO");
-                res= false;
-                prevmax= max;
-                prevmin= min;
-                continue;
-                
-                }
+                a[i]= br.readInt();
             }
+          
+           int good=1;
+           for(int j=1;j<n;j++)
+           {
+               int min=j;
+               for(int k=j-1;(k>=0)&&(j-k)<=5;k--)
+               {
+                   if(a[k]<=a[j])
+                   min=k;
+               }
+               if(min==j)
+               good++;
+            }
+            System.out.println(good);
         }
     }
 }
+               
