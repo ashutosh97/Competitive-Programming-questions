@@ -1,0 +1,9 @@
+Ref: https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-k-times/
+
+
+In share trading, a buyer buys shares and sells on a future date. Given the stock price of n days, the trader is allowed to make at most k transactions, where a new transaction can only start after the previous transaction is complete, find out the maximum profit that a share trader could have made.
+
+There are various versions of the problem. If we are allowed to buy and sell only once, then we can use Maximum difference between two elements algorithm. If we are allowed to make at most 2 transactions, we can follow approach discussed here. 
+
+In this case, we are only allowed to make at max k transactions. The problem can be solved by using dynamic programming.
+
