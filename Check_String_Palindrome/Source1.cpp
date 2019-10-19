@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//This is a function that returns a boolean value, after checking the string.
 bool checkStringPallindrome(string inputString);
 
 bool checkStringPallindrome(string inputString) {
@@ -13,10 +14,11 @@ bool checkStringPallindrome(string inputString) {
 	}
 	return true;
 }
-int main() {
+void main() {
 
-	string input;
-	getline(cin, input);
+	clrscr(); //this inbuild function clears the screen
+	string input; //the string to check whether its palindrome or not
+	getline(cin, input); 
 	if (checkStringPallindrome(input)) {
 		cout << "true" << endl;
 	}
@@ -24,6 +26,5 @@ int main() {
 		cout << "false" << endl;
 	}
 
-	system("pause");
-	return 1;
+	getch();
 }
