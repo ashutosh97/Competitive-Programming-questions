@@ -1,0 +1,19 @@
+What's the biggest sum you can get from adding 5 consecutives integers in a array?
+
+Example:
+	Array = [1, 3, -2, 4, -9, 1, 4, 7]
+	Possibles Sums:
+		1 + 3 + (-2) + 4 + (-9) = -3
+		3 + (-2) + 4 + (-9) + 1 = -3
+		(-2) + 4 + (-9) + 1 + 4 = -2
+		4 + (-9) + 1 + 4 + 7 	=  7
+	
+	So the biggest Sum is 7.
+	
+What's the biggest sum of 5 consecutives integers of the array below?
+
+Array = [1, 3, -5, 8, -9, 13, -2, -3, 8, 4, 3, 6, 1, 2, -2, -4, 8, -4, 1, 8, 2, 1, 3, 1, 2, 3,
+		7, 8, -9, 5, 4, 3, 2, 4, 1, 2, 6, 6, 7, -15, 9, 7, 8, 16, -10, 1, 2, 6, 6, 4, -5, 2, 2
+		3, 6, 7, 8, 1, 2, 3, 3, 4, 5, 6, 1, -5,7, -9, 10, 1, 3, 4, 8, 7, 6, 4, 1, 1, 2, 3, 1]
+
+PS: There may or may not have different sequences that has the same sum.
