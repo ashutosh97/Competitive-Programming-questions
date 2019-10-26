@@ -1,0 +1,25 @@
+Let's say that the pair of indices (i, j) denotes a palindrome in some string S iff i ≤ j and the substring starting at the i-th character and ending at the j-th character of S is a palindrome.
+
+Given an integer N. Your task is to construct a string S such that there are exactly N different pairs (i, j) that denotes a palindrome.
+
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The first line of each test case contains a single integer N denoting the sought number of pairs that denote palindrome.
+
+Output
+For each test case, output a single line containing a string S, consisting of lowecase Latin letters, and having exactly N distinct palindrome-denoting pairs. If there's a few such strings, output any one.
+
+If such string S doesn't exist, output -1 instead of it.
+
+Example
+Input:
+3
+6
+7
+2
+
+Output:
+noon
+radar
+ab

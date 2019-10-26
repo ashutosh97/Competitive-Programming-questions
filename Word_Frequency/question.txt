@@ -1,7 +1,0 @@
-Given a text, find the frequency of all the words in it and print the words that are duplicates:
-"Work hard and play hard and have fun at work."
-
-answer:
-hard
-work
-and

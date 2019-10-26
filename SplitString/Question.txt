@@ -1,4 +1,0 @@
-Given a string, break it into a vector of substrings separated by a specific
-character. For example: get the string "name.midname.lastname" and the
-character "." as separator, the function should return a list/vector with the
-strings {"name", "midname", "lastname"}

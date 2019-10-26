@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define rep(i,a,n) for(i=a;i<n;++i)
+#define irep(i,n,a) for(i=n;i>a;--i)
+#define mod 1000000007
+#define pb push_back
+#define big 9223372036854775807;
+#define big1 LONG_MAX
+#define big2 INT_MAX
+#define big3 1000000000
+#define sma1 LONG_MIN
+#define sma2 INT_MIN
+#define sma3 -1000000000;
+#define mp make_pair
+#define mt make_tuple
+#define dub double
+#define ivec vector<int>
+#define lvec vector<long long>
+#define cvec vector<char>
+#define svec vector<string>
+#define FAST ios_base::sync_with_stdio(false); cin.tie(NULL);
+
+
+int main()
+{
+	FAST
+	int n,i,t;
+	cin>>t;
+	while(t--){
+	cin>>n;
+	for(i=1;i<=n;++i)
+	{
+		if(i%3==1)
+			cout<<'a';
+		else if(i%3==2)
+			cout<<'b';
+		else
+			cout<<'c';
+	}
+	cout<<"\n";
+}
+	return 0;
+}
