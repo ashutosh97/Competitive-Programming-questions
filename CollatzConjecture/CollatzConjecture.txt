@@ -1,0 +1,24 @@
+Collatz Conjecture
+
+The Collatz Conjecture says that if you take any number and follow the following steps, you will never be stuck in a loop.
+
+If the number is even -> number = number/2;
+If the number is odd -> number = 3*number + 1;
+
+If you continue to do this, at some point your number will be equal to 1.
+
+Example: number = 26
+	1 Step - number = 26/2 = 13
+	2 Step - number = 13*3 + 1 = 40
+	3 Step - number = 40/2 = 20
+	4 Step - number = 20/2 = 10
+	5 Step - number = 10/2 = 5
+	6 Step - number = 3*5 + 1 = 16
+	7 Step - number = 16/2 = 8
+	8 Step - number = 8/2 = 4
+	9 Step - number = 4/2 = 2
+	10 Step - number = 2/2 = 1
+
+For the number 26, 10 steps are needed, create a solution that calculates the number of steps for a given N number,
+and the biggest value the number had during the steps.
+	
