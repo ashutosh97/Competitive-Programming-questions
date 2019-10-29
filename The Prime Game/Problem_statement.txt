@@ -1,9 +1,0 @@
-Manasa loves the nim game, in which there are n buckets, each having Ai balls. Two players play alternately. Each turn consists of removing some non-zero number of balls from one of the bucket. A player with lack of moves looses. But, Manasa having played it so many times, she gets bored one day. So she wants to change the rules of the game. She loves prime numbers, so she makes a new rule: any player can only remove a prime number of balls from a bucket. But there are infinite number prime numbers. So to keep the game simple, a player can only remove x balls from a bucket if x belongs to the set 
-
-S = {2, 3, 5, 7, 11, 13}
-
-The whole game can now be described as follows:
-
-There are  buckets, and the  bucket contains  balls. A player can choose a bucket and remove  balls from that bucket where  belongs to . A player loses if there are no more available moves.
-
-Manasa plays the first move against Sandy. Who will win if both of them play optimally?

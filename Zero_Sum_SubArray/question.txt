@@ -1,4 +1,0 @@
-Given an Array of size N, identify whether there exists a subarray with zero sum?
-
-Conditions: -10^6<=N<=10^6
-Time limit is 1.0 sec
