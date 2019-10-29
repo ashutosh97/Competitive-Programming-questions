@@ -1,0 +1,15 @@
+Alex has a new book, he want to read a certain pages which are multiples of his lucky numbers 2. The book contain N number of 
+pages, how many pages he can read according to the prime number concept.
+
+Contraint:
+1<=N<=1000
+
+
+Input:
+N=500
+
+Output:
+249
+
+Analysis:
+    It is simple that a numbers whose remainder is zero when divided by 2 is the answer.
