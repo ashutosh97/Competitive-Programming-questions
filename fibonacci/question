@@ -1,0 +1,6 @@
+The Fibonacci Sequence is the series of numbers:
+    1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+finonacci(n) = fibonacci(n-2) + fibonacci(n-1)
+
+What is the 40th term of the Fibonacci Sequence?
