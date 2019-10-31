@@ -1,0 +1,13 @@
+Print Prime Factorization using Sieve O(log n) for multiple queries 
+Contraints : 	1<= T <= 10000
+		1 <= N <= 10000000
+Input : First Line contains number of queries i.e T
+	for each test case , For input N print prime factorization of N . 
+	
+Example 
+Input:  2
+ 	6
+	12246
+Output : 2 3  
+	 2 3 13 157
+ 
