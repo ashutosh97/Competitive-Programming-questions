@@ -1,3 +1,0 @@
-Binary search
-
-Question- Given a sorted array of numbers and a number, find if the given number exists in the array in O(nlogn) time and O(1) space.

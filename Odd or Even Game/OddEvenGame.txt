@@ -1,1 +1,0 @@
-Play againt the pc an Odd and Even game.

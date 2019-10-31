@@ -1,1 +1,0 @@
-This is a program that takes a given string and loops through the string and places each character in reverse!
