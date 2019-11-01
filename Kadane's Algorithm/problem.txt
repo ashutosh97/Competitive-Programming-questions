@@ -1,5 +1,0 @@
-Problem:
-Find out the maximum continuous subarray sum in linear time
-
-Solution:
-Kadane's algorithm can calculate the maximum subarray sum in linear time

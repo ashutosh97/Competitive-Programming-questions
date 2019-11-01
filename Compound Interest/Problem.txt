@@ -1,0 +1,7 @@
+A person invests 1000.00 in a savings account yeilding 5 percent interest. Assuming that all interest is left on deposit in the account, calculate and print the amount of money in the account at the end of each year for 10 years. Use the following formula for determining these amounts: 
+a = p(1+r)^n 
+where  
+p is original amount invested (principal) 
+r is the annual interest rate 
+n is the number of years 
+a is the amount on deposit at the end of n years 

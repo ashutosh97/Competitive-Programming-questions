@@ -1,6 +1,0 @@
-## Problem:
-
-The LCM of two integers n1 and n2 is the smallest positive integer that is perfectly 
-divisible by both n1 and n2 (without a remainder). For example: the LCM of 72 and 120 is 360.
-
-write a program written in COBOL that will compute the LCM of 2 numbers
