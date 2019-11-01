@@ -1,0 +1,1 @@
+1.Write a single line of python code that would satisfy this situation: You’re ordering some supplies from a store, and you need to figure out what the total price is. The supplies cost $10. You have a 30% discount at this store, state tax is 5%, and shipping will be $7.50. 
