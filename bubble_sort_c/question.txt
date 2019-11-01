@@ -1,2 +1,0 @@
-Make a C program to bubble sort this array of integers (smallest to biggest): {303, -909, 101, 42, 0, 42, 21, 1, 2}
-Expected result => {-909, 0, 1, 2, 21. 42, 42, 101, 303}
