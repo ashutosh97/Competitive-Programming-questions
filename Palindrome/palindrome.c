@@ -2,7 +2,7 @@
 int main()
 {
     int n, reversedInteger = 0, remainder, originalInteger;
-    printf("Enter a integer: ");
+    printf("Enter an integer: ");
     scanf("%d", &n);
     originalInteger = n;
     // reversed integer is stored in variable 
