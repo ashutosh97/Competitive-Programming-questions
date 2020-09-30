@@ -1,0 +1,82 @@
+		                                             		CIRCLE COLORING				
+                                                                      time limit per test1 second
+                                                                      memory limit per test256 megabytes
+                                                                      inputstandard input
+                                                                      outputstandard output
+
+You are given three sequences: a1,a2,…,an; b1,b2,…,bn; c1,c2,…,cn.
+
+For each i, ai≠bi, ai≠ci, bi≠ci.
+
+Find a sequence p1,p2,…,pn, that satisfy the following conditions:
+
+pi∈{ai,bi,ci}
+pi≠p(imodn)+1.
+In other words, for each element, you need to choose one of the three possible values, such that no two adjacent elements (where we consider elements i,i+1 adjacent for i<n and also elements 1 and n) will have equal value.
+
+It can be proved that in the given constraints solution always exists. You don't need to minimize/maximize anything, you need to find any proper sequence.
+
+Input
+The first line of input contains one integer t (1≤t≤100): the number of test cases.
+
+The first line of each test case contains one integer n (3≤n≤100): the number of elements in the given sequences.
+
+The second line contains n integers a1,a2,…,an (1≤ai≤100).
+
+The third line contains n integers b1,b2,…,bn (1≤bi≤100).
+
+The fourth line contains n integers c1,c2,…,cn (1≤ci≤100).
+
+It is guaranteed that ai≠bi, ai≠ci, bi≠ci for all i.
+
+Output
+For each test case, print n integers: p1,p2,…,pn (pi∈{ai,bi,ci}, pi≠pimodn+1).
+
+If there are several solutions, you can print any.
+
+Example
+inputCopy
+5
+3
+1 1 1
+2 2 2
+3 3 3
+4
+1 2 1 2
+2 1 2 1
+3 4 3 4
+7
+1 3 3 1 1 1 1
+2 4 4 3 2 2 4
+4 2 2 2 4 4 2
+3
+1 2 1
+2 3 3
+3 1 2
+10
+1 1 1 2 2 2 3 3 3 1
+2 2 2 3 3 3 1 1 1 2
+3 3 3 1 1 1 2 2 2 3
+outputCopy
+1 2 3
+1 2 1 2
+1 3 4 3 2 4 2
+1 3 2
+1 2 3 1 2 3 1 2 3 2
+Note
+In the first test case p=[1,2,3].
+
+It is a correct answer, because:
+
+p1=1=a1, p2=2=b2, p3=3=c3
+p1≠p2, p2≠p3, p3≠p1
+All possible correct answers to this test case are: [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1].
+
+In the second test case p=[1,2,1,2].
+
+In this sequence p1=a1, p2=a2, p3=a3, p4=a4. Also we can see, that no two adjacent elements of the sequence are equal.
+
+In the third test case p=[1,3,4,3,2,4,2].
+
+In this sequence p1=a1, p2=a2, p3=b3, p4=b4, p5=b5, p6=c6, p7=c7. Also we can see, that no two adjacent elements of the sequence are equal.
+
