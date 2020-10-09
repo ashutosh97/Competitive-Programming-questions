@@ -1,10 +1,23 @@
 # Competitive Programming questions
+
 This repo is open for all. Add your favourite competitive programming questions along with the solution.
 
 ## Guidelines
 
-- Create a  folder with the question name.
+- Create a folder with the question name.
 - Add a .txt file with the problem statement and a solution file which contains the solution of the given problem.
+
+## Folder Structure
+
+```
+├── Array
+|    ├── Question/Problem name
+|    |         ├── Question.txt
+|    |         ├── Solution.yourLanguageExt
+```
+
+- Try to maintain `👆above` folder structure.
+- If your question/Problem folder doesn't lie in the above once fill free to create
 
 ## Getting Started
 
@@ -17,7 +30,7 @@ git clone https://github.com/your-username/Competitive-Programming-questions.git
 ```
 
 - Create a new folder with the question name.
-- Add your question and solution file in that folder. 
+- Add your question and solution file in that folder.
 - Commit and push
 
 ```markdown
