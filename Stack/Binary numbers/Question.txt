@@ -1,0 +1,1 @@
+The question is how to make binary numbers using a stack.
