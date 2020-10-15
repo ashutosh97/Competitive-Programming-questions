@@ -1,0 +1,121 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define pb push_back
+#define ff first
+#define ss second
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define repp(i,a,b) for(int i=a;i<=b;i++)
+// #define endl '\n'
+#define mod 1000000007
+
+bool sorttt(const pair<int,int> &a, 
+            const pair<int,int> &b) 
+{ 
+    return (a.second < b.second); 
+}
+    // vector<int> v[100001];
+    // // int mx=0,node=-1;
+    // bool rec[100001];
+    // // int dis[100001]={0};
+    // // vector<int> vec[100001];
+    // set<int> s;
+    // bool f1=0;
+    // int ans=0;
+
+// void dfs(int x,int c){
+//     rec[x]=1;
+//     rep(i,0,v[x].size()){
+//         if(!rec[v[x][i]]&&arr[i]==1){
+//             dfs(v[x][i],c+1);
+//         }
+//         else if(!rec[v[x][i]]&&arr[i]==0){
+//             dfs(v[x][i],c);
+//         }
+//     }
+//     if(c<=m)d++;
+// }
+
+// void dfs(int x){
+//     rec[x]=true;
+//     s.insert(x);
+//     for(auto it : v[x]){
+//         if(!rec[it]){ dfs(it);}
+//     }
+// }
+// void bfs(int x, int n, int y){
+//     bool k=0;
+//     bool vis[n+1];
+//     rep(i,1,n+1) vis[i]=false;
+//     vis[x]=true;
+//     list<int> q;
+//     q.pb(x);
+//     while(!q.empty()){
+//         int s=q.front();
+//         if(s==y)f1=1;
+//         if(find(v[s].begin(),v[s].end(),y)!=v[s].end() or s==y)k=1;
+//         if(!k)ans++;
+//         q.pop_front();
+//         for(int i=0;i<v[s].size();i++){
+//             if(!vis[v[s][i]]){
+//                 vis[v[s][i]]=true;
+//                 q.pb(v[s][i]);
+//             }
+//         }
+//     }
+// }
+
+bool isprime(int x){
+    int flag=0;
+    repp(i,2,sqrt(x)){
+        if(x%i==0){return 0;}
+    }
+    return 1;
+}
+bool prime[1000001];
+void sieve(){
+    memset(prime, 1, sizeof(prime));
+    for (int p=2; p*p<=1000001; p++) 
+    { 
+        if (prime[p] == 1) 
+        {   
+            for (int i=p*p; i<=1000001; i += p) 
+                prime[i] = 0;
+        } 
+    }
+    prime[1]=0;
+
+}
+signed main()
+{
+    fast
+    int n,f=0,sum=0; cin>>n;
+    int arr[n];
+    vector<int> e,o,e1,o1;
+    rep(i,0,n){ 
+        cin>>arr[i];
+        if(arr[i]>0){
+            f=1;
+            if(arr[i]%2){o.pb(arr[i]); sum+=arr[i];}
+            else{e.pb(arr[i]); sum+=arr[i];}
+        }
+        else{
+            if((arr[i]*-1)%2==0)e1.pb(arr[i]);
+            else o1.pb(arr[i]);
+        }
+    }
+    sort(e1.begin(),e1.end());
+    sort(o1.begin(),o1.end());
+    sort(o.begin(), o.end());
+    sort(e.begin(), e.end());
+    if(f==0){
+        if(o1.size()==0){cout<<-1;}
+        else cout<<o1[o1.size()-1];
+        return 0;
+    }
+    if(sum%2==0&&o.size()>0&&o1.size()>0){cout<<sum-min(o[0], -1*o1[o1.size()-1]); return 0;}
+    if(sum%2){cout<<sum; return 0;}
+    if(o.size()>0){cout<<sum-o[0]; return 0;}
+    if(o1.size()>0)cout<<sum+o1[o1.size()-1];
+}
