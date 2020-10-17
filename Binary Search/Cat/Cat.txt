@@ -1,0 +1,63 @@
+This problem from TOI13 (Thailand Olympaid of Informatics 2017).
+I love this problem because I love Cats.
+
+Source: https://www.proprog.ml/tasks/toi13_cat/descs/12575
+
+Time Limit 1000 ms
+Memory Limit 512 MB
+
+N cats stay in line. N is always even because we want to pair the cats which have the same height in
+the consecutive position(Each value of height can have only 1 pair). But the cats stay in a random position.
+It is your task to find the size of the pocket to bring the cats and move it to the right position.
+
+For Example:
+N = 6 (6 cats)
+Cat height = 3 3 2 5 5 2
+We can see that the cats that height equals to 3 and 5 already each with the couple but the cats that
+height equals to 2 didn't sit near to each other.
+So, we will use the pocket that has the size of 2 to bring the two-unit-height cat to sit next to each other.
+It'll become 3 3 2 2 5 5 or 3 3 5 5 2 2.
+
+Input:
+1st line contains amount of N while 1<=N<=2x10^6 or 2000000
+Next N lines is hi stands for the height of cat number i while 1<=i<=N and 1<=hi<=2^31
+Output:
+The smallest size of pocket that can rearrange all cat to the right position.
+
+Example input1:
+6
+3
+3
+2
+5
+5
+2
+Example output1:
+2
+(Like an example)
+
+Example input2:
+6
+3
+5
+2
+2
+5
+3
+Example output2:
+3
+(Use pocket size 3 to bring 2 and 3 cats sit next to each other it'll become 5 5 3 3 2 2 for example)
+
+Example input3:
+6
+2
+2
+3
+3
+5
+5
+Example output3:
+0
+(Doesn't need to use the pocket)
+
+
