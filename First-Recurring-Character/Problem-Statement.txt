@@ -1,0 +1,2 @@
+Print the first recurring character in a given input string in O(n).
+If there are no such characters return empty.
