@@ -1,0 +1,8 @@
+Sort the following array using selection Sort
+input : [50, -14, 2, 39, 23, 0, 17]
+
+output : [-14, 0, 2, 17, 23, 39, 50]
+
+To test the program, if you have node installed, 
+navigate to the SelectionSort-JS folder,
+run this command : node selectionSort.js
