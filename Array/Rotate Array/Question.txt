@@ -1,0 +1,1 @@
+We have to rotate the elements of the given array k times to the right.
