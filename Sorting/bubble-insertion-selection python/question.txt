@@ -1,0 +1,2 @@
+WAP to arrange a list of nos. in ascending order using
+bubble/insertion/selection sorting depending upon the user.
