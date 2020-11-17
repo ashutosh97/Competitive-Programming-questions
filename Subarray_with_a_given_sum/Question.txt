@@ -1,0 +1,1 @@
+Given an unsorted array of size N of non-negative integers, find a continuous sub-array which adds to a given number S. If no such subarray exists ,print -1.
