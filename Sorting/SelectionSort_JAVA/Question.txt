@@ -1,0 +1,1 @@
+Q. Use Selection Sort to sort this given unsorted array {81,22,96,78,13}.
