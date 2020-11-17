@@ -1,0 +1,2 @@
+Write a MIPS program that computes and displays the sum of integers from 1 up to n,
+(where n is entered by the user)
