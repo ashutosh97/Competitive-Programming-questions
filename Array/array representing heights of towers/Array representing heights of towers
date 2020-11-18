@@ -1,0 +1,41 @@
+QUESTION DESCRIPTION
+
+Ramar has a plan to play a game with his friends. so he has an array representing heights of towers.
+
+The array has towers from left to right , count number of towers facing the sunset.
+
+Examples:
+
+Input : arr[] = {7, 4, 8, 2, 9}
+
+Output: 3
+
+Explanation:
+
+As 7 is the first element, it can see the sunset.
+
+4 can't see the sunset as 7 is hiding it.
+
+8 can see.
+
+2 can't see the sunset.
+
+9 also can see the sunset.
+
+Input : arr[] = {2, 3, 4, 5}
+
+Output : 4
+TEST CASE 1
+
+INPUT
+5
+7 4 8 2 9
+OUTPUT
+3
+TEST CASE 2
+
+INPUT
+4
+2 3 4 5
+OUTPUT
+4
