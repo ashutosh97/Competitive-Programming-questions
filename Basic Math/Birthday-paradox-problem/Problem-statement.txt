@@ -1,0 +1,7 @@
+How many people must be there in a room to make the probability 100% that at-least two people in the room have same birthday?
+
+Answer: 367 (since there are 366 possible birthdays, including February 29).
+
+How many people must be there in a room to make the probability 50% that at-least two people in the room have same birthday?
+Answer: 23
+The number is surprisingly very low. In fact, we need only 70 people to make the probability 99.9 %.
