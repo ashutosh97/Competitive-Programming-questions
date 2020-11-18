@@ -1,0 +1,9 @@
+This program contain all double linked ist problems listed below...
+
+.) Delete node from start, End or middle
+.) Check loop in a linked list, looped index nad removal of loop
+.) Add a node
+.) inorder, preorder,postorder
+.) Finding middle node
+.) finding given node
+.) No of occurance of a value
