@@ -10,7 +10,7 @@ def get_next_idx(index, N, I, players):
             index = index-N
         if players[index] == 'Alive':
             sum += 1
-        if sum == 3:
+        if sum == I:
             return index
         index += 1
 
