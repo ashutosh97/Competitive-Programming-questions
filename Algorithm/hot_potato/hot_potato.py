@@ -44,7 +44,7 @@ def hot_potato(N, I, players):
         if has_to_stop(players):
             return
 
-N = 2
+N = 7
 I = 3
 assert I <= N
 
